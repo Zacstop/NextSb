@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 ${({ theme }) => css`
   html {
     font-size: 62.5%; // 1rem to equal 10px
+    font-color: ${theme.colors.black};
   }
 
   html,

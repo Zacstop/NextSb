@@ -1,4 +1,4 @@
-import { Story, Meta } from '@storybook/react/types-6-0';
+import { StoryFn, Meta } from '@storybook/react';
 import { Main } from './index';
 
 export default {
@@ -6,4 +6,4 @@ export default {
   component: Main,
 } as Meta;
 
-export const Default: Story = (args) => <Main {...args} />;
+export const Default: StoryFn = (args) => <Main {...args} />;

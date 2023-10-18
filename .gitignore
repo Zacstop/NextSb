@@ -34,3 +34,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# yarn
+.yarn
+
+# storybook build file
+storybook-static
+src/stories

@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 * {
@@ -7,10 +7,8 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
-${({ theme }) => css`
   html {
     font-size: 62.5%; // 1rem to equal 10px
-    font-color: ${theme.colors.black};
   }
 
   html,
@@ -19,7 +17,4 @@ ${({ theme }) => css`
     background-color: #333;
     color: #ccc;
   }
-`}
-
-
 `;

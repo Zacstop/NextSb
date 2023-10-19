@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom/types';
+
 import { render, screen } from '@testing-library/react';
 
 import { Main } from './index';
@@ -7,8 +9,6 @@ describe('<Main />', () => {
     const { container } = render(<Main />);
 
     expect(container.firstChild).toMatchSnapshot();
-    expect(
-      screen.getByRole('heading', { name: /nextjs template/i }),
-    ).toBeInDocument();
+    expect(screen.getByRole('heading', { name: /nextjs template/i })).toBeInDocument();
   });
 });

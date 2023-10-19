@@ -11,6 +11,7 @@ public/workbox-*.js
 
 # testing
 /coverage
+**/__snapshots__
 
 # next.js
 /.next/

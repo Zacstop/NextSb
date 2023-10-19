@@ -15,7 +15,7 @@
     "build-storybook": "storybook build"
   },
   "lint-staged": {
-    "src/**/*.spec.{ts,tsx}": [
+    "src/**/*": [
       "yarn test --findRelatedTests --passWithNoTests --bail"
     ]
   },

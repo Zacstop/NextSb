@@ -1,5 +1,5 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": ["nextjs", "Parens", "xlarge", "xsmall", "xxlarge", "xxsmall"]
+  "cSpell.words": ["Cantarell", "Neue", "nextjs", "Parens", "Roboto", "Segoe", "xlarge", "xsmall", "xxlarge", "xxsmall"]
 }

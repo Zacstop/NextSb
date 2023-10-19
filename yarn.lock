@@ -2600,13 +2600,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:13.5.6":
-  version: 13.5.6
-  resolution: "@next/font@npm:13.5.6"
-  checksum: 12aa997147094bb122e2e22b29a2f6c1872de37fca0b444f20aa5c48e20bd8176c7d8661c1c597a43d528c7dc75d3acc44bc08c47aa716a5ab450fca68e4c814
-  languageName: node
-  linkType: hard
-
 "@next/swc-darwin-arm64@npm:13.5.6":
   version: 13.5.6
   resolution: "@next/swc-darwin-arm64@npm:13.5.6"
@@ -12296,7 +12289,6 @@ __metadata:
   dependencies:
     "@babel/core": ^7.23.2
     "@babel/preset-typescript": ^7.23.2
-    "@next/font": 13.5.6
     "@storybook/addon-actions": ^7.5.0
     "@storybook/addon-essentials": ^7.5.0
     "@storybook/addon-interactions": ^7.5.0

@@ -1,29 +1,3 @@
-<h1 align="center">
-  <br>
-  <a><img src=".github/architecture.png" alt="logo" width="100%"></a>
-  <br>
-</h1>
-
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/imperadorxs/nextjs-13-boilerplate">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/imperadorxs/nextjs-13-boilerplate">
-
-  <a href="https://github.com/imperadorxs/nextjs-13-boilerplate/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/imperadorxs/nextjs-13-boilerplate">
-  </a>
-
-  <a href="https://github.com/imperadorxs/nextjs-13-boilerplate/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/imperadorxs/nextjs-13-boilerplate.svg">
-  </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-
-   <a href="https://github.com/imperadorxs/nextjs-13-boilerplate/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/imperadorxs/nextjs-13-boilerplate?style=social">
-  </a>
-</p>
-
 # Next.js 13 with Typescript reference architecture
 
 ## Getting Started
@@ -54,11 +28,11 @@ yarn create next-app -e https://github.com/imperadorxs/nextjs-13-boilerplate
 <br />
 `yarn test`
 
-# File structure
+## File structure
 
 **This is your source code tree:**
 
-```
+```javascript
 src
 |-- common
    |-- assets
@@ -81,7 +55,7 @@ src
 
 **This is your component structure:**
 
-```
+```javascript
 ...
 components
 |-- YourComponent
@@ -122,11 +96,11 @@ Contains all the files responsible for consuming external services, such as the 
 
 ### More utils commands
 
-Find and fix Javascrit and TypeScript problems according to pre-defined rules
+Find and fix javascript and TypeScript problems according to pre-defined rules
 `npm run lint`
 `yarn lint`
 
-# Advantages of using this react project template
+## Advantages of using this react project template
 
 The project is already configured with:
 
@@ -139,13 +113,13 @@ The project is already configured with:
 - Husky
 - Storybook
 
-### Main dependecies
+### Main dependencies
 
 - [nextjs](https://nextjs.org/blog/next-13/)
 - [react](https://reactjs.org/)
 - [styled-components](https://styled-components.com/)
 
-### Main dev dependecies
+### Main dev dependencies
 
 - [testing-library](https://testing-library.com/)
 - [eslint](https://eslint.org/)

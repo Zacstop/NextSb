@@ -1,4 +1,5 @@
 import { StoryFn, Meta } from '@storybook/react';
+
 import { Main } from './index';
 
 export default {

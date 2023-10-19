@@ -9,14 +9,14 @@
     "start": "next start",
     "prepare": "husky install",
     "lint": "next lint",
-    "test": "jest",
+    "test": "jest -u",
     "test:watch": "yarn test --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn test --findRelatedTests --passWithNoTests --bail"
+      "yarn test --findRelatedTests  --bail"
     ]
   },
   "dependencies": {

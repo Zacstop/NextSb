@@ -16,8 +16,10 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     </head>
     <body>
       <StyledComponentsRegistry>
-        <GlobalStyles />
-        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        <>
+          <GlobalStyles />
+          <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        </>
       </StyledComponentsRegistry>
     </body>
   </html>

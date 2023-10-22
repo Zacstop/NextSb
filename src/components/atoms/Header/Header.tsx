@@ -5,28 +5,40 @@ type User = {
   name: string;
 };
 
+type MenuList = {
+  name: string;
+  link: string;
+}[];
+
 export interface HeaderProps {
-  user?: User;
-  title: string;
-  onLogin: () => void;
-  onLogout: () => void;
+  title?: string;
+  menuList?: MenuList;
+  user?: User | null;
+  onLogin?: () => void;
+  onLogout?: () => void;
+  join?: () => void;
+  containerColor?: string;
 }
 
-export const Header = ({ user, title, onLogin, onLogout }: HeaderProps) => {
-  console.log(user, onLogin, onLogout);
+export const Header = ({ title, menuList = [], user, onLogin, onLogout, join, containerColor }: HeaderProps) => {
   return (
-    <HeaderStyle.Container>
+    <HeaderStyle.Container $containerColor={containerColor}>
       <HeaderStyle.Wrapper>
-        <HeaderStyle.WrapperLeft>{title}</HeaderStyle.WrapperLeft>
+        <HeaderStyle.HeaderLogo>{title}</HeaderStyle.HeaderLogo>
         <HeaderStyle.GNB>
-          <HeaderStyle.Menus>menu1</HeaderStyle.Menus>
-          <HeaderStyle.Menus>menu2</HeaderStyle.Menus>
-          <HeaderStyle.Menus>menu3</HeaderStyle.Menus>
-          <HeaderStyle.Menus>menu4</HeaderStyle.Menus>
+          {menuList.map((menu) => (
+            <HeaderStyle.Menus key={menu.name}>{menu.name}</HeaderStyle.Menus>
+          ))}
         </HeaderStyle.GNB>
-        <HeaderStyle.WrapperRight>
-          <HeaderStyle.asdf>login</HeaderStyle.asdf>
-        </HeaderStyle.WrapperRight>
+        <HeaderStyle.LoginWrapper>
+          <HeaderStyle.User>{user?.name}</HeaderStyle.User>
+          {user ? (
+            <HeaderStyle.LoginButton onClick={onLogout}>Logout</HeaderStyle.LoginButton>
+          ) : (
+            <HeaderStyle.LoginButton onClick={onLogin}>Login</HeaderStyle.LoginButton>
+          )}
+          <HeaderStyle.JoinButton onClick={join}>join</HeaderStyle.JoinButton>
+        </HeaderStyle.LoginWrapper>
       </HeaderStyle.Wrapper>
     </HeaderStyle.Container>
   );

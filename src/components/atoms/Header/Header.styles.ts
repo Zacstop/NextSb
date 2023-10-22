@@ -1,16 +1,20 @@
 import styled from 'styled-components';
 
+type ContainerProps = {
+  $containerColor?: string;
+};
+
 export const HeaderStyle = {
-  Container: styled.div`
+  Container: styled.div<ContainerProps>`
     display: flex;
     width: 100%;
-    height: auto;
-    padding: 24px 130px;
+    padding: 24px 60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: #3e86f5;
+
+    background: ${(props) => props.$containerColor || 'var(--Blue-primary, #3e86f5)'};
 
     /* mobile */
     @media (max-width: 375px) {
@@ -24,17 +28,12 @@ export const HeaderStyle = {
         0px 1px 3px 0px rgba(16, 24, 40, 0.1),
         0px 1px 2px -1px rgba(16, 24, 40, 0.1);
     }
-
-    /* tablet */
-    @media (max-width: 768px) {
-      background-color: '';
-    }
   `,
   Wrapper: styled.div`
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: 160px;
 
     /* mobile */
     @media (max-width: 375px) {
@@ -45,7 +44,7 @@ export const HeaderStyle = {
       align-items: center;
     }
   `,
-  WrapperLeft: styled.div`
+  HeaderLogo: styled.div`
     color: #fff;
     font-family: Work Sans;
     font-size: 34px;
@@ -67,7 +66,7 @@ export const HeaderStyle = {
   `,
   GNB: styled.div`
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 50px;
   `,
   Menus: styled.p`
@@ -78,30 +77,41 @@ export const HeaderStyle = {
     font-weight: 500;
     line-height: normal;
   `,
-  WrapperRight: styled.button`
-    width: 141px;
-    height: 65px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: var(--White-primary, #fff);
-    border: none;
-
-    /* mobile */
-    @media (max-width: 375px) {
-      display: flex;
-      width: 24px;
-      height: 24px;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-    }
+  LoginWrapper: styled.button`
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    background: rgba(255, 255, 255, 0);
   `,
-  asdf: styled.p`
-    color: var(--Blue-primary, #3e86f5);
+  User: styled.p`
+    color: #fff;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 1;
     line-height: normal;
+  `,
+  LoginButton: styled.div`
+    display: flex;
+    width: 77px;
+    height: 40px;
+    padding: 14px 37px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--White-primary, #fff);
+  `,
+  JoinButton: styled.div`
+    display: flex;
+    width: 77px;
+    height: 40px;
+    padding: 14px 37px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--White-primary, #fff);
   `,
 };

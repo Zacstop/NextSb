@@ -9,7 +9,7 @@ export default meta;
 
 export const Default: StoryObj<typeof meta> = {
   args: {
-    title: 'En-velops',
+    title: 'Woori Bank',
     user: {
       name: 'kang san',
     },

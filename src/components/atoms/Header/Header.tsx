@@ -1,5 +1,6 @@
 import React from 'react';
 import { HeaderStyle } from './Header.styles';
+import Link from 'next/link';
 
 type User = {
   name: string;
@@ -20,14 +21,24 @@ export interface HeaderProps {
   containerColor?: string;
 }
 
-export const Header = ({ title, menuList = [], user, onLogin, onLogout, join, containerColor }: HeaderProps) => {
+export const Header: React.FC<HeaderProps> = ({
+  title,
+  menuList = [],
+  user,
+  onLogin,
+  onLogout,
+  join,
+  containerColor,
+}: HeaderProps) => {
   return (
     <HeaderStyle.Container $containerColor={containerColor}>
       <HeaderStyle.Wrapper>
         <HeaderStyle.HeaderLogo>{title}</HeaderStyle.HeaderLogo>
         <HeaderStyle.GNB>
           {menuList.map((menu) => (
-            <HeaderStyle.Menus key={menu.name}>{menu.name}</HeaderStyle.Menus>
+            <Link key={menu.name} href={menu.link}>
+              <HeaderStyle.Menu>{menu.name}</HeaderStyle.Menu>
+            </Link>
           ))}
         </HeaderStyle.GNB>
         <HeaderStyle.LoginWrapper>
@@ -43,5 +54,3 @@ export const Header = ({ title, menuList = [], user, onLogin, onLogout, join, co
     </HeaderStyle.Container>
   );
 };
-
-export default Header;

@@ -12,9 +12,13 @@ export const HeaderStyle = {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    position: fixed;
     gap: 10px;
 
-    background: ${(props) => props.$containerColor || 'var(--Blue-primary, #3e86f5)'};
+    transition: background-color 1.5s ease;
+
+    background: ${(props: ContainerProps) => props.$containerColor || 'var(--Blue-primary, #3e86f5)'};
 
     /* mobile */
     @media (max-width: 375px) {
@@ -69,13 +73,19 @@ export const HeaderStyle = {
     align-items: center;
     gap: 50px;
   `,
-  Menus: styled.p`
-    color: #fff;
+  Menu: styled.div`
+    color: var(--White-primary, #fff);
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    text-align: center;
+
+    &: hover {
+      cursor: pointer;
+      color: #aaa;
+    }
   `,
   LoginWrapper: styled.button`
     display: flex;

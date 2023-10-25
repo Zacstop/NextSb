@@ -1,11 +1,13 @@
 'use client';
 
-import * as S from './styles';
+import React from 'react';
+import { Wrapper } from './styles';
+import LayoutPage from './LayoutPage';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <S.Wrapper>
-      <h1>Next 13 boilerplate</h1>
-    </S.Wrapper>
+    <LayoutPage>
+      <Wrapper></Wrapper>
+    </LayoutPage>
   );
 }

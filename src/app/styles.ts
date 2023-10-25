@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  place-items: center;
+  display: flex;
+  width: 100%;
+  padding-right: 0px;
+  flex-direction: column;
+  align-items: flex-start;
 
   h1 {
     font-size: 5rem;

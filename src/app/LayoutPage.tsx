@@ -1,7 +1,9 @@
 // components/layouts/PageLayout.tsx
 import React, { useEffect, useState } from 'react';
-import { Header, MainBanner } from '@/components/atoms';
+import { Header } from '@/components/molecules';
 import { Wrapper } from './styles';
+import { MainBanner } from '@/components/atoms';
+// import { ScrolledImg } from '@/components/atoms';
 
 const menuList = [
   {
@@ -19,7 +21,7 @@ const menuList = [
 ];
 
 const user = {
-  name: 'kang san',
+  name: 'username',
 };
 
 interface LayoutPageProps {
@@ -28,6 +30,7 @@ interface LayoutPageProps {
 
 const LayoutPage: React.FC<LayoutPageProps> = ({ children }) => {
   const [isScroll, setIsScroll] = useState(false);
+  // const [width, setWidth] = useState(1170);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +43,29 @@ const LayoutPage: React.FC<LayoutPageProps> = ({ children }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const rect = document.getElementById('scrolled-img')?.getBoundingClientRect();
+  //     if (!rect) return;
+
+  //     const centerY = window.innerHeight / 2;
+  //     const distanceFromCenter = Math.abs(centerY - (rect.top + rect.height / 2));
+
+  //     // 화면의 넓이를 기반으로 scaleFactor를 조절하여 이미지가 양쪽까지 크게 채워지도록 함
+  //     const scaleFactor = distanceFromCenter < centerY ? 1 + (1 - distanceFromCenter / centerY) : 1;
+  //     const newWidth = Math.max(1170 * scaleFactor, 1170);
+
+  //     setWidth(newWidth);
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   handleScroll();
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   const handleLogin = () => {
     console.log('login');
@@ -55,9 +81,9 @@ const LayoutPage: React.FC<LayoutPageProps> = ({ children }) => {
 
   return (
     <Wrapper>
-      <MainBanner />
+      <MainBanner imageUrl="/assets/images/bg.png" />
       <Header
-        title="En-velops"
+        title="Woori Bank"
         menuList={menuList}
         user={user}
         onLogin={handleLogin}
@@ -65,6 +91,7 @@ const LayoutPage: React.FC<LayoutPageProps> = ({ children }) => {
         join={handleJoin}
         containerColor={isScroll ? '#3e86f5' : 'transparent'}
       />
+      {/* <ScrolledImg imageLabel={'adasdfas'} imageUrl={'/assets/images/bg.png'} width={`${width}px`} /> */}
       <main>{children}</main>
     </Wrapper>
   );

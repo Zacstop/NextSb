@@ -9,7 +9,7 @@ const Mpp = () => {
   return (
     <LayoutPage>
       <Styled.Container></Styled.Container>
-      <MainBanner />
+      <MainBanner imageUrl="/assets/images/bg.png" />
     </LayoutPage>
   );
 };

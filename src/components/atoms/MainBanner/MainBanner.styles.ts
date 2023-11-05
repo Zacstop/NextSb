@@ -1,34 +1,56 @@
 import styled from 'styled-components';
 
-export const MainBannerStyle = {
-  Container: styled.div`
+interface StyledMainBannerProps {
+  imageUrl: string;
+}
+
+export const StyledMainBanner = styled.div<StyledMainBannerProps>`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-image: url(${(props) => props.imageUrl});
+
+  & .medixform {
+    height: 950px;
+    object-fit: cover;
     position: relative;
     width: 100%;
-    height: 950px;
-    background: url('/assets/images/bg.png') no-repeat center center / cover;
-  `,
-  Title: styled.div`
+  }
+
+  & .main-banner-text {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    left: 38px;
+    padding: 0px 67px;
     position: absolute;
-    top: 200px;
-    left: 200px;
-    color: #fff;
-    font-family: Poppins;
+    top: 152px;
+  }
+
+  & .easy-fast-and {
+    color: #ffffff;
+    font-family: 'Poppins-SemiBold', Helvetica;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
+    letter-spacing: 0;
     line-height: normal;
-  `,
-  Description: styled.div`
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    width: 653px;
-    height: 168px;
-    color: var(--White-primary, #fff);
-    font-family: Poppins;
+    margin-top: -1px;
+    position: relative;
+    width: 827px;
+  }
+
+  & .no-coding-required {
+    color: var(--white-primary);
+    font-family: 'Poppins-Medium', Helvetica;
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 200%;
-  `,
-};
+    height: 168px;
+    letter-spacing: 0;
+    line-height: 48px;
+    position: relative;
+    width: 653px;
+  }
+`;

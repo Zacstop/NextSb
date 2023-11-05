@@ -1,21 +1,28 @@
 import React from 'react';
-import { MainBannerStyle } from './MainBanner.styles';
+import { StyledMainBanner } from './MainBanner.styles';
 
-export const MainBanner: React.FC = () => {
+export interface MainBannerProps {
+  imageUrl: string;
+}
+
+export const MainBanner = ({ imageUrl }: MainBannerProps) => {
   return (
-    <MainBannerStyle.Container>
-      <MainBannerStyle.Title>
-        Easy, fast, and efficient,
-        <br />
-        MediXForm advances clinical success
-      </MainBannerStyle.Title>
-      <MainBannerStyle.Description>
-        No coding required for easy
-        <br />
-        CRF editing Over 70% reduction in clinical preparation time
-        <br />
-        100% reduction in CRA query tasks
-      </MainBannerStyle.Description>
-    </MainBannerStyle.Container>
+    <StyledMainBanner imageUrl={imageUrl}>
+      <div className="medixform" />
+      <div className="main-banner-text">
+        <p className="easy-fast-and">
+          Easy, fast, and efficient,
+          <br />
+          MediXForm advances clinical success
+        </p>
+        <p className="no-coding-required">
+          No coding required for easy CRF editing
+          <br />
+          Over 70% reduction in clinical preparation time
+          <br />
+          100% reduction in CRA&nbsp;&nbsp;query tasks
+        </p>
+      </div>
+    </StyledMainBanner>
   );
 };

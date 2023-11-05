@@ -21,15 +21,7 @@ export interface HeaderProps {
   containerColor?: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({
-  title,
-  menuList = [],
-  user,
-  onLogin,
-  onLogout,
-  join,
-  containerColor,
-}: HeaderProps) => {
+export const Header = ({ title, menuList = [], user, onLogin, onLogout, join, containerColor }: HeaderProps) => {
   return (
     <HeaderStyle.Container $containerColor={containerColor}>
       <HeaderStyle.Wrapper>

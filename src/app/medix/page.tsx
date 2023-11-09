@@ -8,6 +8,7 @@ import { Footer } from '../../components/atoms/Footer/Footer';
 import { Header } from '@/components/molecules';
 import { MediXform } from '@/section/MediXForm/MediXForm';
 import { ReferenceContainer } from '@/section/MediXForm/Reference';
+import { BannerContainer } from '@/section/MediXForm/BannerContainer';
 // import { MediXform } from '../../components/atoms/MediXform/MediXform';
 // import { MedixformIntro } from './';
 // import { ReferenceContainer } from './';
@@ -38,7 +39,7 @@ export const MediX = (): JSX.Element => {
         {/* <MedixformIntro /> */}
         <MediXform />
         <ReferenceContainer />
-        {/* <Banner /> */}
+        <BannerContainer />
         <Footer
           divider="https://c.animaapp.com/3h8jrA1X/img/divider-1.svg"
           element="https://c.animaapp.com/3h8jrA1X/img/-----------2023-08-07------1-33-1-1@2x.png"

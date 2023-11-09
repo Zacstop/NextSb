@@ -58,17 +58,21 @@ const StyledReferenceCard = styled.div`
     }
 
     & .div {
-      color: var(--black-75);
-      font-family: 'Poppins', Helvetica;
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 9px;
       line-height: normal;
-      margin-right: -82.5px;
-      position: relative;
-      transform: rotate(90deg);
       width: fit-content;
+      height: 270px;
     }
+  }
+
+  & .rotate-text {
+    display: inline-block; /* 또는 block도 가능, 필요에 따라 */
+    transform: rotate(90deg);
+    transform-origin: left bottom; /* 회전 축을 조절하려면 이 값을 변경 */
+    word-wrap: normal;
+    color: var(--black-75);
+    font-family: 'Poppins', Helvetica;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   & .text-container {
@@ -222,7 +226,9 @@ export const ReferenceCard = ({
           alt="Unsplash"
           src={property1 === 'variant-2' ? 'https://c.animaapp.com/3h8jrA1X/img/unsplash-7uxn7nudorc-3.svg' : unsplash}
         />
-        <div className="div">14 FEB 2020</div>
+        <div className="div">
+          <span className="rotate-text">14 FEB 2020</span>
+        </div>
       </div>
       <div className="text-container">
         <div className="text-wrapper-2">

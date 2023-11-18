@@ -128,3 +128,4 @@ The project is already configured with:
 - [prettier](https://prettier.io/)
 - [typescript](https://www.typescriptlang.org/)
 - [web-vitals](https://web.dev/vitals/)
+# NextSb

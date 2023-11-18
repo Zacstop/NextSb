@@ -1,23 +1,22 @@
 import styled from 'styled-components';
 
-interface StyledMainBannerProps {
-  imageUrl: string;
-}
+// interface StyledMainBannerProps {
+//   imageUrl: string;
+// }
 
-export const StyledMainBanner = styled.div<StyledMainBannerProps>`
+export const StyledMainBanner = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
-  background-image: url(${(props) => props.imageUrl});
 
-  & .medixform {
+  /* & .medixform {
     height: 950px;
     object-fit: cover;
     position: relative;
     width: 100%;
-  }
+  } */
 
   & .main-banner-text {
     align-items: flex-start;

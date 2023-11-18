@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledMainBanner } from './MainBanner.styles';
+import Image from 'next/image';
 
 export interface MainBannerProps {
   imageUrl: string;
@@ -7,8 +8,9 @@ export interface MainBannerProps {
 
 export const MainBanner = ({ imageUrl }: MainBannerProps) => {
   return (
-    <StyledMainBanner imageUrl={imageUrl}>
-      <div className="medixform" />
+    <StyledMainBanner>
+      {/* <div className="medixform" /> */}
+      <Image src={imageUrl} alt="medixform" layout="fill" objectFit="cover" />
       <div className="main-banner-text">
         <p className="easy-fast-and">
           Easy, fast, and efficient,

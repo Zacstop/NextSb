@@ -12,7 +12,6 @@ export const HeaderStyle = {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     position: fixed;
     gap: 10px;
 
@@ -82,7 +81,7 @@ export const HeaderStyle = {
     line-height: normal;
     text-align: center;
 
-    &: hover {
+    &:hover {
       cursor: pointer;
       color: #aaa;
     }

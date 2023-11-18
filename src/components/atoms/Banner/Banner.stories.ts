@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Card } from './Banner';
+import { Banner } from './Banner';
 
 const meta: Meta = {
-  component: Card,
+  component: Banner,
 };
 
 export default meta;

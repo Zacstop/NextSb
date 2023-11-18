@@ -47,13 +47,13 @@ const StyledBanner = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 80px;
+    height: 40px;
     justify-content: center;
     left: 480px;
     padding: 25px 30px;
     position: absolute;
     top: 306px;
-    width: 220px;
+    width: 150px;
   }
 
   & .text-wrapper-8 {

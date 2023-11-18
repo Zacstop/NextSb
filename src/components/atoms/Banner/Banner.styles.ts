@@ -1,72 +1,61 @@
 import styled from 'styled-components';
 
-export const CardStyle = {
-  Container: styled.div`
-    display: flex;
-    width: 1270px;
-    padding: 10px;
-    align-items: center;
-    gap: 60px;
+const StyledBanner = styled.div`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 500px;
+  position: relative;
+  width: 1180px;
 
-    /* mobile */
-    @media (max-width: 375px) {
-      display: flex;
-    }
-
-    /* tablet */
-    @media (max-width: 768px) {
-      background-color: '';
-    }
-  `,
-
-  Wrapper: styled.div`
-    display: flex;
-
-    /* mobile */
-    @media (max-width: 375px) {
-      display: flex;
-    }
-  `,
-
-  DescriptionWrapper: styled.div`
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    flex: 1 0 0;
-  `,
-
-  Title: styled.div`
+  & .unsplash-qpbhshj {
     align-self: stretch;
-    color: #000;
-    font-family: Poppins;
-    font-size: 32px;
-    font-style: normal;
+    flex: 1;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  & .p {
+    color: var(--white-primary);
+    font-family: 'Poppins', Helvetica;
+    font-size: 48px;
     font-weight: 600;
+    left: 218px;
+    letter-spacing: 0;
     line-height: normal;
-    margin-bottom: 10px;
+    position: absolute;
+    text-align: center;
+    top: 113px;
+    width: 743px;
+  }
 
-    @media (max-width: 375px) {
-      display: flex;
-    }
-  `,
-
-  Description: styled.div`
+  & .frame-4 {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
     display: flex;
-    height: auto;
     flex-direction: column;
+    gap: 10px;
+    height: 40px;
     justify-content: center;
-    align-self: stretch;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 200%; /* 40px */
+    left: 480px;
+    padding: 25px 30px;
+    position: absolute;
+    top: 306px;
+    width: 150px;
+  }
 
-    @media (max-width: 375px) {
-      display: flex;
-    }
-  `,
-};
+  & .text-wrapper-8 {
+    color: var(--blue-primary);
+    font-family: 'Poppins', Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+`;

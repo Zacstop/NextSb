@@ -27,6 +27,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 import { TextImageFrame } from '../ImageFrame';
+import { CardStyle } from './Card.styles';
 
 interface Props {
   description: string;
@@ -64,7 +65,7 @@ const MainCardWrapper = styled.div`
     font-family: 'Poppins-Regular', Helvetica;
     font-size: 20px;
     font-weight: 400;
-    height: 241px;
+    /* height: 241px; */
     letter-spacing: 0;
     line-height: 40px;
     position: relative;
@@ -139,8 +140,10 @@ export const Card = ({
       <div className={`card-description ${style}`}>
         {style === 'reversed' && (
           <>
-            <div className="x-form"> {title}</div>
-            <p className="xform-a-patented">{description}</p>
+            <CardStyle.XForm>{title}</CardStyle.XForm>
+            <CardStyle.XFormPatented>{description}</CardStyle.XFormPatented>
+            {/* <div className="x-form">{title}</div> */}
+            {/* <p className="xform-a-patented">{description}</p> */}
           </>
         )}
         {style === 'default' && (

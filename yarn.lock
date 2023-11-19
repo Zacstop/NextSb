@@ -5345,11 +5345,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 20.9.1
-  resolution: "@types/node@npm:20.9.1"
+  version: 20.9.2
+  resolution: "@types/node@npm:20.9.2"
   dependencies:
     undici-types: ~5.26.4
-  checksum: bb893c6790733dac32818c1ca170fa466622dec39a0ade4639463e1358cb811771e242accbd065e7a1bfe59adc989c0ee59be65e462d3a0ab49043426f0b7637
+  checksum: 5bbb8fb2248fc5c5c4071d9809fb9af85997677c07124d65665202b53283a3b7bdff26fb844e9ee407e3847dfce6399c2b01e3329ea44a4b720647b1b987c678
   languageName: node
   linkType: hard
 
@@ -5363,18 +5363,18 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:^14.0.10 || ^16.0.0":
-  version: 16.18.61
-  resolution: "@types/node@npm:16.18.61"
-  checksum: fdd162829eddc9b0b82a1ec485ba3876428ff3bd94c5869b13f4a36eb2aa9bddd22ea7e8ee3b2faa91a0f70ff08d8fd8d4be7dd0d143f8ee776907d6a1d2ed25
+  version: 16.18.62
+  resolution: "@types/node@npm:16.18.62"
+  checksum: 816783dec474acdb476762ce6fed0cb92bbbf98327ba3f8946fcec9fe6824dd71f1189cc5bd9f00cd0db80947a64601caa8b87f6a2e0cee52c17ced466438e90
   languageName: node
   linkType: hard
 
 "@types/node@npm:^18.0.0":
-  version: 18.18.9
-  resolution: "@types/node@npm:18.18.9"
+  version: 18.18.10
+  resolution: "@types/node@npm:18.18.10"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 629ce20357586144031cb43d601617eef45e59460dea6b1e123f708e6885664f44d54f65e5b72b2614af5b8613f3652ced832649c0b991accbc6a85139befa51
+  checksum: 1245a14a38bfbe115b8af9792dbe87a1c015f2532af5f0a25a073343fefa7b2edfd95ff3830003d1a1278ce7f9ee0e78d4e5454d7a60af65832c8d77f4032ac8
   languageName: node
   linkType: hard
 
@@ -7710,13 +7710,13 @@ __metadata:
   linkType: hard
 
 "chromatic@npm:^7.5.0":
-  version: 7.5.0
-  resolution: "chromatic@npm:7.5.0"
+  version: 7.6.0
+  resolution: "chromatic@npm:7.6.0"
   bin:
     chroma: dist/bin.js
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
-  checksum: 0795a1a1217ee2115d583c0a27cfe71a8c82a1489cd39e35cd6a5846a30a1a6e865cd649b997663bd6cd2e6457df42eea3b25f742fb8e63648bf0fa938b32543
+  checksum: 5f473385cc2c152b43487646803a213f0dc3fcf9f7755a051040e31b5f8e67486b8a80fff3bbe0752bdb0e41851ff965b587f122938b35acf5c5eba1d3d1b9e4
   languageName: node
   linkType: hard
 
@@ -16899,16 +16899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string_decoder@npm:^1.0.0, string_decoder@npm:~1.1.1":
-  version: 1.1.1
-  resolution: "string_decoder@npm:1.1.1"
-  dependencies:
-    safe-buffer: ~5.1.0
-  checksum: 9ab7e56f9d60a28f2be697419917c50cac19f3e8e6c28ef26ed5f4852289fe0de5d6997d29becf59028556f2c62983790c1d9ba1e2a3cc401768ca12d5183a5b
-  languageName: node
-  linkType: hard
-
-"string_decoder@npm:^1.1.1, string_decoder@npm:^1.3.0":
+"string_decoder@npm:^1.0.0, string_decoder@npm:^1.1.1, string_decoder@npm:^1.3.0":
   version: 1.3.0
   resolution: "string_decoder@npm:1.3.0"
   dependencies:
@@ -16921,6 +16912,15 @@ __metadata:
   version: 0.10.31
   resolution: "string_decoder@npm:0.10.31"
   checksum: fe00f8e303647e5db919948ccb5ce0da7dea209ab54702894dd0c664edd98e5d4df4b80d6fabf7b9e92b237359d21136c95bf068b2f7760b772ca974ba970202
+  languageName: node
+  linkType: hard
+
+"string_decoder@npm:~1.1.1":
+  version: 1.1.1
+  resolution: "string_decoder@npm:1.1.1"
+  dependencies:
+    safe-buffer: ~5.1.0
+  checksum: 9ab7e56f9d60a28f2be697419917c50cac19f3e8e6c28ef26ed5f4852289fe0de5d6997d29becf59028556f2c62983790c1d9ba1e2a3cc401768ca12d5183a5b
   languageName: node
   linkType: hard
 

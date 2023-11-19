@@ -1,22 +1,3 @@
-// import React from 'react';
-// import { FooterStyle } from './Footer.styles';
-// import { TextImageFrame } from '../ImageFrame';
-
-// export interface FooterProps {
-//   title: string;
-//   des: string;
-// }
-
-// export const Footer = ({ title, des }: FooterProps) => {
-//   return (
-//     <FooterStyle.Container>
-
-//     </FooterStyle.Container>
-//   );
-// };
-
-// export default Footer;
-
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FooterStyle } from './Footer.styles';
